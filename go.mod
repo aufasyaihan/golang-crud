@@ -1,4 +1,4 @@
-module golang-crud-users
+module golang-crud-krs
 
 go 1.24.0
 

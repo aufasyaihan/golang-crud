@@ -2,12 +2,15 @@ package models
 
 import "gorm.io/gorm"
 
-type User struct {
-    ID    uint   `gorm:"primaryKey" json:"id"`
-    Name  string `json:"name"`
-    Email string `json:"email"`
+type KRS struct {
+    IdKrs        uint   `gorm:"primaryKey" json:"id_krs"`
+    Nim          string `json:"nim"`
+    KodeMatakuliah string `json:"kode_matakuliah"`
+    Matakuliah   string `json:"matakuliah"`
+    Semester     string `json:"semester"`
+    TahunAkademik string `json:"tahun_akademik"`
 }
 
 func Migrate(db *gorm.DB) {
-    db.AutoMigrate(&User{})
+    db.AutoMigrate(&KRS{})
 }

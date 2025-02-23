@@ -1,9 +1,9 @@
 package main
 
 import (
-    "golang-crud-users/config"
-    "golang-crud-users/models"
-    "golang-crud-users/routes"
+    "golang-crud-krs/config"
+    "golang-crud-krs/models"
+    "golang-crud-krs/routes"
 )
 
 func main() {
