@@ -6,7 +6,8 @@ import (
 )
 
 func SetupRouter() *gin.Engine {
-    r := gin.Default()
+    gin.SetMode(gin.ReleaseMode)
+    r := gin.New()
     r.POST("/krs", controllers.CreateKRS)
     r.GET("/krs", controllers.GetAllKRS)
     r.GET("/krs/:id", controllers.GetKRS)
